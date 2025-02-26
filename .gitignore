@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directory (adjust if your venv directory has a different name)
+venv/
+env/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Output directory (if you don't want to version control your generated images)
+output/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
