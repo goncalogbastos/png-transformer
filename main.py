@@ -3,9 +3,8 @@ from processor import ColorTransformer, ImageResizer, ImageProcessor
 
 WHITE_THRESHOLD = 240
 BLACK_THRESHOLD = 15
-DARK_GRAY = 40
+DARK_GRAY = 117
 WHITE = 255
-WIDTH = 32
 DPI = 96
 
 transformer = ColorTransformer(
@@ -14,8 +13,9 @@ transformer = ColorTransformer(
     dark_gray=(DARK_GRAY, DARK_GRAY, DARK_GRAY),
     white=(WHITE, WHITE, WHITE)
 )
-resizer = ImageResizer(width=WIDTH, height=None, keep_aspect_ratio=True)
 
+# Set width=None here; we'll pick the actual size dynamically in processor.py
+resizer = ImageResizer(width=None, height=None, keep_aspect_ratio=True)
 
 processor = ImageProcessor(
     input_folder="input",
@@ -24,4 +24,5 @@ processor = ImageProcessor(
     resizer=resizer,
 )
 
+# Process all images with the specified DPI
 processor.process_all(dpi=(DPI, DPI))
