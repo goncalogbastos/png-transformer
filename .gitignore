@@ -19,7 +19,7 @@ build/
 .vscode/
 
 # Output directory (if you don't want to version control your generated images)
-output/
+
 
 # OS-specific files
 .DS_Store
