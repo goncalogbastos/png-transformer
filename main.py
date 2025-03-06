@@ -3,7 +3,7 @@ from processor import ColorTransformer, ImageResizer, ImageProcessor
 
 WHITE_THRESHOLD = 240
 BLACK_THRESHOLD = 15
-DARK_GRAY = 170
+DARK_GRAY = 220
 WHITE = 255
 DPI = 96
 
